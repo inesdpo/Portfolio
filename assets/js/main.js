@@ -123,7 +123,25 @@
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+    // determine initial filter: URL `filter` param or hash overrides data-default-filter
+    let filter = (function() {
+      const defaultFilter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+      try {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('filter')) {
+          return params.get('filter') || defaultFilter;
+        }
+        if (window.location.hash) {
+          // support hash like #.filter-games or #filter-games
+          const h = window.location.hash.substring(1);
+          if (!h) return defaultFilter;
+          if (h.startsWith('.')) return h;
+          if (h.startsWith('filter-')) return '.' + h.replace('filter-', '');
+          return h;
+        }
+      } catch (e) {}
+      return defaultFilter;
+    })();
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
@@ -134,6 +152,17 @@
         filter: filter,
         sortBy: sort
       });
+
+      // update UI: set the active filter button based on initial filter
+      try {
+        const currentActive = isotopeItem.querySelector('.isotope-filters .filter-active');
+        if (currentActive) currentActive.classList.remove('filter-active');
+        isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(li) {
+          if (li.getAttribute('data-filter') === filter) {
+            li.classList.add('filter-active');
+          }
+        });
+      } catch (e) {}
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {

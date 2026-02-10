@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - EasyFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">EasyFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html#portfolio"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio" id="breadcrumb-category">Category</a></li>
+            <li class="breadcrumb-item active current" id="breadcrumb-title">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1 id="page-title">Portfolio Details</h1>
+        <p id="page-subtitle">Loading portfolio information...</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 g-lg-5">
+          <div class="col-lg-6">
+            <div id="portfolio-images"></div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+                <h2 id="portfolio-heading">Portfolio Project</h2>
+                <div id="portfolio-content"></div>
+                <div id="portfolio-testimonial"></div>
+              </div>
+
+              <div class="portfolio-info mt-5">
+                <h3>Project information</h3>
+                <ul id="portfolio-info"></ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Portfolio Dynamic Content Script -->
+  <script>
+    // Portfolio data structure
+    const portfolioData = {
+      1: {
+        title: "Monster Mail",
+        category: "Game Development",
+        shortDescription: "3D Game for children, developed in Unity 3D, based on the Monster Project and in partnership with Saxion.",
+        description: [
+          "For this project, I worked alongside the Artist team where I was responsible for designing the environment, develop the UI elements for the game, as well as 3D model the environment assets.",
+          "Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.",
+          "Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.",
+          "Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt."
+        ],
+        testimonial: {
+          quote: "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.",
+          author: "Sara Wilsson",
+          role: "Designer",
+          image: "assets/img/person/person-f-5.webp"
+        },
+        client: "Concordia Enschede",
+        date: "June, 2025",
+        technology: "Unity 3D, C#",
+        downloadUrl: "https://kianvanbeek.itch.io/monster-mail",
+        images: [
+          "assets/img/portfolio/Monstermail/monstermail2.jpg",
+          "assets/img/portfolio/Monstermail/monstermail3.jpg",
+          "assets/img/portfolio/Monstermail/monstermail0.png"
+        ]
+      },
+      2: {
+        title: "Videomapping Radioheads",
+        category: "Immersive Experiences",
+        shortDescription: "A short 3D animation made in Blender based on the 50 year celebration of the Portuguese revolution of 25th of April.",
+        description: [
+          "This immersive video mapping experience was created to commemorate the 50th anniversary of the Portuguese Revolution of April 25th. The project combines 3D animation with video mapping technology to create a stunning visual spectacle.",
+          "Developed entirely in Blender, the animation features dynamic visuals and thematic elements that celebrate the historical significance of the revolution. The piece was designed to be projected onto buildings, creating an engaging public art experience.",
+          "The project demonstrates proficiency in 3D modeling, animation, and video projection design, blending art with technology to create memorable visual experiences."
+        ],
+        client: "Cultural Event",
+        date: "2023",
+        technology: "Blender, Video Mapping",
+        images: ["assets/img/portfolio/portfolio-2.png"]
+      },
+      3: {
+        title: "VetCanas",
+        category: "Web Design",
+        shortDescription: "Designed and have begun the developed of a responsive website for a veterinary clinic.",
+        description: [
+          "VetCanas is a fully responsive website designed and developed for a veterinary clinic. The site provides an excellent user experience across all devices, from mobile phones to desktop computers.",
+          "The website includes sections for services, staff information, appointment booking, and client testimonials. Built with clean HTML, modern CSS styling, and interactive JavaScript elements, it offers a professional online presence for the clinic.",
+          "The design prioritizes user experience and accessibility, ensuring that pet owners can easily find information about services and schedule appointments online."
+        ],
+        client: "VetCanas Clinic",
+        date: "2023",
+        technology: "Figma, HTML, CSS, JavaScript",
+        website: "www.vetcanas.com",
+        images: ["assets/img/portfolio/portfolio-5.jpg"]
+      },
+      4: {
+        title: "UniVerse",
+        category: "Immersive Experiences",
+        shortDescription: "VR puzzle game developed in Unity based on IADE's university building in Santos, Lisboa.",
+        description: [
+          "UniVerse is an innovative VR puzzle game that transports players into a virtual replica of IADE's university building located in Santos, Lisboa. The game combines exploration, puzzle-solving, and immersive virtual reality technology.",
+          "Players navigate through the university building, solving increasingly complex puzzles while discovering hidden elements and Easter eggs related to the real location. The game serves as both an entertaining experience and a unique way to explore the campus virtually.",
+          "This project showcases expertise in VR development, 3D environment design, puzzle mechanics, and creating immersive user experiences using cutting-edge technology."
+        ],
+        client: "IADE University",
+        date: "2023",
+        technology: "Unity 3D, VR Development",
+        images: ["assets/img/portfolio/portfolio-4.0.jpg"]
+      },
+      5: {
+        title: "UI Assets for Monster Mail",
+        category: "Web Design",
+        shortDescription: "Designed UI assets for a 3D children's game.",
+        description: [
+          "This project involved designing UI assets for the 3D children's game 'Monster Mail'. The assets were created with a focus on being visually appealing and intuitive for young players.",
+          "The UI design was developed using Figma, ensuring consistency in visual style and usability across all game screens. The assets include buttons, menus, and other interactive elements that enhance the player's experience.",
+          "Built with modern web technologies, the platform is optimized for performance and conversion, providing an excellent shopping experience for customers."
+        ],
+        client: "Concordia Enschede",
+        date: "2025",
+        technology: "Figma",
+        images: [
+          "assets/img/portfolio/uidesign/Typography and color-17.png",
+          "assets/img/portfolio/uidesign/Typography and color-2.png",
+          "assets/img/portfolio/uidesign/Typography and color-3.png",
+          "assets/img/portfolio/uidesign/Typography and color-4.png",
+          "assets/img/portfolio/uidesign/Typography and color-5.png",
+          "assets/img/portfolio/uidesign/Typography and color-6.png",
+          "assets/img/portfolio/uidesign/Typography and color-7.png",
+          "assets/img/portfolio/uidesign/Typography and color-8.png",
+          "assets/img/portfolio/uidesign/Typography and color-9.png",
+          "assets/img/portfolio/uidesign/Typography and color-10.png",
+          "assets/img/portfolio/uidesign/Typography and color-11.png",
+          "assets/img/portfolio/uidesign/Typography and color-12.png",
+          "assets/img/portfolio/uidesign/Typography and color-13.png",
+          "assets/img/portfolio/uidesign/Typography and color-14.png",
+          "assets/img/portfolio/uidesign/Typography and color-15.png",
+          "assets/img/portfolio/uidesign/Typography and color-17.png",
+          "assets/img/portfolio/uidesign/Typography and color-18.png",
+          "assets/img/portfolio/uidesign/Typography and color-23.png",
+          "assets/img/portfolio/uidesign/Typography and color-19.png",
+          "assets/img/portfolio/uidesign/Typography and color-21.png",
+          "assets/img/portfolio/uidesign/Typography and color-20.png",
+          "assets/img/portfolio/uidesign/Typography and color-24.png",
+          "assets/img/portfolio/uidesign/Slide 16_9 - 11.png",
+          "assets/img/portfolio/uidesign/Typography and color-26.png",
+          "assets/img/portfolio/uidesign/Typography and color-27.png"
+        ]
+      },
+      6: {
+        title: "Environment Assets for Monster Mail",
+        category: "3D Modelling",
+        shortDescription: "Environment assets for a 3D children's game.",
+        description: [
+          "For this project, I created various 3D environment assets for the children's game 'Monster Mail'. The assets were designed to be colorful, engaging, and suitable for a young audience.",
+          "Using Blender, I modeled and optimized a range of objects including decorations and interactive elements that contribute to the game's immersive world.",
+          "These assets were integrated into the game developed in Unity, enhancing the visual appeal and overall experience for players."
+        ],
+        client: "Concordia Enschede",
+        date: "June, 2025",
+        technology: "Unity 3D, C#",
+        downloadUrl: "https://behance.net/inesdpo",
+        images: [
+          "assets/img/portfolio/3dmodeling-monstermail.png",
+          "assets/img/portfolio/3dmodeling-monstermail1.png"
+        ]
+      }
+    };
+
+    // Get portfolio ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const portfolioId = params.get('id');
+
+    // Load portfolio data
+    function loadPortfolio() {
+      const portfolio = portfolioData[portfolioId];
+
+      if (!portfolio) {
+        document.body.innerHTML = "<div class='container mt-5'><h1>Portfolio not found</h1><p><a href='index.html#portfolio'>Back to portfolio</a></p></div>";
+        return;
+      }
+
+      // Update breadcrumbs
+      document.getElementById('breadcrumb-category').textContent = portfolio.category;
+      document.getElementById('breadcrumb-title').textContent = portfolio.title;
+
+      // Update page title
+      document.getElementById('page-title').textContent = portfolio.title;
+      document.getElementById('page-subtitle').textContent = portfolio.shortDescription;
+
+      // Update portfolio heading
+      document.getElementById('portfolio-heading').textContent = portfolio.title;
+
+      // Update portfolio content with paragraphs and testimonials
+      const contentDiv = document.getElementById('portfolio-content');
+      portfolio.description.forEach(paragraph => {
+        const p = document.createElement('p');
+        p.textContent = paragraph;
+        contentDiv.appendChild(p);
+      });
+
+      // Add testimonial if it exists
+      if (portfolio.testimonial) {
+        const testimonialDiv = document.getElementById('portfolio-testimonial');
+        const testimonialHTML = `
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>${portfolio.testimonial.quote}</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <div>
+              <img src="${portfolio.testimonial.image}" class="testimonial-img" alt="">
+              <h3>${portfolio.testimonial.author}</h3>
+              <h4>${portfolio.testimonial.role}</h4>
+            </div>
+          </div>
+        `;
+        testimonialDiv.innerHTML = testimonialHTML;
+      }
+
+      // Update portfolio images
+      const imagesDiv = document.getElementById('portfolio-images');
+      portfolio.images.forEach(image => {
+        const img = document.createElement('img');
+        img.src = image;
+        img.alt = portfolio.title;
+        img.className = 'img-fluid mb-4';
+        imagesDiv.appendChild(img);
+      });
+
+      // Update portfolio info
+      const infoUl = document.getElementById('portfolio-info');
+      let infoHTML = `
+        <li><strong>Category</strong> ${portfolio.category}</li>
+        <li><strong>Client</strong> ${portfolio.client}</li>
+        <li><strong>Project date</strong> ${portfolio.date}</li>
+        <li><strong>Technology</strong> ${portfolio.technology}</li>
+      `;
+      
+      if (portfolio.downloadUrl) {
+        infoHTML += `<li><strong>Project URL</strong> <a href="${portfolio.downloadUrl}" target="_blank">${portfolio.downloadUrl}</a></li>
+                     <li><a href="${portfolio.downloadUrl}" target="_blank" class="btn-visit align-self-start">Download</a></li>`;
+      } else if (portfolio.website) {
+        infoHTML += `<li><strong>Project URL</strong> <a href="${portfolio.website}" target="_blank">${portfolio.website}</a></li>
+                     <li><a href="${portfolio.website}" target="_blank" class="btn-visit align-self-start">Visit Website</a></li>`;
+      }
+      
+      infoUl.innerHTML = infoHTML;
+    }
+
+    // Load portfolio on page load
+    document.addEventListener('DOMContentLoaded', loadPortfolio);
+  </script>
+
+</body>
+
+</html>

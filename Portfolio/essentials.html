@@ -104,15 +104,7 @@
         <div class="row gy-4 g-lg-5">
           <div class="col-lg-6"> 
             <img src="../assets/img/portfolio/essentials.png" class="img-fluid mb-4" alt="">
-            <div class="video-wrapper mb-4">
-              <video id="essentialsVideo" src="../assets/files/essentials-trailer.mp4" class="img-fluid"></video>
-              <div class="play-button" id="playBtn">
-                <i class="bi bi-play-fill"></i>
-              </div>
-              <div class="pause-button" id="pauseBtn">
-                <i class="bi bi-pause-fill"></i>
-              </div>
-            </div>
+            <video class="img-fluid mb-4" src="../assets/files/essentials-trailer.mp4" controls></video>
             <p class="credits" style=" margin-top: 10px; font-size: 13px; text-align: center">Trailer made by <span style="color: var(--accent-color);">Francesco Bonet</span></p>
 
           </div>
@@ -180,65 +172,7 @@
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-  <script>
-    const video = document.getElementById('essentialsVideo');
-    const playBtn = document.getElementById('playBtn');
-    const pauseBtn = document.getElementById('pauseBtn');
-    const wrapper = document.querySelector('.video-wrapper');
-
-    // Play video when play button is clicked
-    playBtn.addEventListener('click', function() {
-      video.play();
-      playBtn.style.display = 'none';
-    });
-
-    // Pause video when pause button is clicked
-    pauseBtn.addEventListener('click', function() {
-      video.pause();
-      pauseBtn.style.display = 'none';
-      playBtn.style.display = 'flex';
-    });
-
-    // Show pause button only when hovering on playing video
-    wrapper.addEventListener('mouseenter', function() {
-      if (!video.paused) {
-        pauseBtn.style.display = 'flex';
-        pauseBtn.classList.add('visible');
-      }
-    });
-
-    // Hide pause button when mouse leaves
-    wrapper.addEventListener('mouseleave', function() {
-      pauseBtn.classList.remove('visible');
-      setTimeout(function() {
-        if (!video.paused) {
-          pauseBtn.style.display = 'none';
-        }
-      }, 300);
-    });
-
-    // Handle play event
-    video.addEventListener('play', function() {
-      playBtn.style.display = 'none';
-    });
-
-    // Handle pause event
-    video.addEventListener('pause', function() {
-      pauseBtn.style.display = 'none';
-      pauseBtn.classList.remove('visible');
-      playBtn.style.display = 'flex';
-    });
-
-    // Handle video end
-    video.addEventListener('ended', function() {
-      pauseBtn.style.display = 'none';
-      pauseBtn.classList.remove('visible');
-      playBtn.style.display = 'flex';
-    });
-  </script>
+<!-- Main JS File --> <script src="../assets/js/main.js"></script>
 
 </body>
 
